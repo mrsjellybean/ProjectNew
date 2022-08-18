@@ -1,0 +1,153 @@
+body {
+  font-family: "Edu SA Beginner", cursive;
+}
+img {
+  max-width: 90%;
+  margin: 45px 30px 0 50px;
+}
+.style {
+  margin-right: 15px;
+  font-size: 44px;
+  font-weight: 600;
+  color: #2f2e41;
+}
+#proper {
+  line-height: 1.5;
+  margin-bottom: 0;
+  position: relative;
+  padding-top: 20px;
+}
+h1 {
+  display: inline;
+}
+#button {
+  border: none;
+  background-color: #fff;
+  font-size: 35px;
+  height: 30px;
+}
+.cloud {
+  width: 50px;
+  display: inline;
+  margin: 5px;
+}
+.button {
+  padding-left: 110px;
+  padding-right: 1px;
+}
+.image {
+  padding-right: 50px;
+}
+
+.search-engine {
+  padding-top: 22px;
+  padding-left: 240px;
+  padding-right: 1px;
+}
+.date-time {
+  width: 60px;
+  padding: 20px 1px 20px 40px;
+  margin-top: 5px;
+}
+.description {
+  padding: 0px 1px 15px 120px;
+
+  width: 100px;
+}
+.temperature {
+  padding: 0px 1px 15px 65px;
+  max-width: 186px;
+}
+.icon {
+  padding: 20px 1px 20px 10px;
+  margin-top: 5px;
+  max-width: 80px;
+}
+.city {
+  padding: 10px 1px 10px 230px;
+  margin-top: 5px;
+}
+#current {
+  text-decoration: double;
+  border-width: 3px;
+  border-color: #6c63ff;
+  background-color: #fff;
+  background-color: #6b63ff16;
+  padding: 5px;
+
+  border-radius: 15px;
+  display: inline;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 26px;
+  margin-bottom: 55px;
+  font-weight: 600;
+  color: #2f2e41;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #6c63ff;
+  margin-bottom: 15px;
+}
+i {
+  font-size: 22px;
+}
+ul {
+  display: inline;
+  margin: 30 auto 0;
+  list-style-type: none;
+}
+.shown {
+  display: inline;
+}
+.celfar {
+  font-size: 20px;
+  padding: 0;
+}
+
+#proper {
+  margin-bottom: 10;
+  padding-bottom: 0;
+}
+.box {
+  margin: 100px auto;
+  width: 800px;
+  height: 409px;
+}
+
+.icons {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 30px;
+  height: 30px;
+}
+form {
+  display: inline;
+}
+*,
+::after,
+::before {
+  box-sizing: unset;
+}
+.days {
+  text-align: center;
+}
+.search {
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+#city-input {
+  height: 15px;
+  padding-top: 10px;
+  font-size: 22px;
+  text-align: left;
+  width: 150px;
+}
+#temperature {
+  position: relative;
+  line-height: 1.5;
+}

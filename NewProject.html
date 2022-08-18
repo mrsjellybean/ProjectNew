@@ -27,32 +27,110 @@
     <div class="container border box">
       <div class="row header border">
         <div class="col-3 icon"></div>
-        <div class="col-3 temperature"></div>
-        <div class="col-3 city"></div>
+        <div class="col-3 temperature">
+                        <h1 class="style temperature float-left" id="temperature">31
+          </h1>
+          <div class = "shown">
+        <span class="units celfar">
+     <a  href="#" id="celsius-link">
+       °C 
+     </a>
+      |
+     <a href="#" id="fahrenheit-link">°F
+     </a>
+   </span>
+        </div>
+        </div>
+        <div class="col-3 city">
+            <h1 id="city">Your city</h1>
+        </div>
       </div>
       <div class="row date-search border">
-        <div class="col-3 date-time"></div>
-        <div class="col-3 description"></div>
-        <div class="col-3 search-engine"></div>
+        <div class="col-3 date-time">
+             <smaller id = "date">Friday 14th</small>
+        </div>
+        <div class="col-3 description">
+             <ul>
+                <li>
+            Description:<span id="description">-</span>%
+            </li>
+            <li>
+            Wind speed:<span id="speed">0</span>m/s
+            </li>
+            <li>
+            Humidity:<span id="humidity">0</span>%
+            </li>
+                        </ul>
+        </div>
+        <div class="col-3 search-engine">
+ <form id="search-form">
+                         
+                         <input
+                  type="search"
+                  placeholder="Type a city.."
+                                    id="city-input"
+                  autocomplete="off"
+                />
+                                   <button  id="button"> <i class=" ss fa-solid fa-magnifying-glass"></i></button>
+          
+      </form>        
+
+
+        </div>
       </div>
       <div class="row naming border">
-        <div class="col-3 name"></div>
-        <div class="col-3 button"></div>
+        <div class="col-6 name">
+          <h2>The forecast for the next 5 days:</h2>
+        </div>
+        <div class="col-4 button">
+          <button id="current">Find the weather in my city 📍</button> 
+        </div>
       </div>
       <div class="row forecast border">
-        <div class="col first-day"></div>
-        <div class="col second-day"></div>
-        <div class="col third-day"></div>
-        <div class="col fourth-day"></div>
-        <div class="col fifth-day"></div>
-        <div class="col image"></div>
+        <div class="col first-day">
+
+   <p>
+        <h3>26°C</h3>
+                <p class="days">ST</p>
+            </p>
+
+        </div>
+        <div class="col second-day">
+             <p>
+        <h3>26°C</h3>
+                <p class="days">ST</p>
+            </p>
+        </div>
+        <div class="col third-day">
+             <p>
+        <h3>26°C</h3>
+                <p class="days">ST</p>
+            </p>
+        </div>
+        <div class="col fourth-day">
+             <p>
+        <h3>26°C</h3>
+                <p class="days">ST</p>
+            </p>
+        </div>
+        <div class="col fifth-day">
+             <p>
+        <h3>26°C</h3>
+                <p class="days">ST</p>
+            </p>
+        </div>
+        <div class="col-4 image">
+          <img src="src/undraw_weather_re_qsmd.svg" alt="weather-girl" />
+        </div>
       </div>
 
       <p>
-        <a href="https://github.com/mrsjellybean/Challange">Open-source code</a>
+        <a href="https://github.com/mrsjellybean/ProjectNew"
+          >Open-source code</a
+        >
         by Yuliia Bahlai
       </p>
     </div>
-    <script src="src/script.js"></script>
+    <script src="D:\Studying\ProjectNew\src\script.js"></script>
   </body>
 </html>
