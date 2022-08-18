@@ -56,7 +56,7 @@ h1 {
 }
 .temperature {
   padding: 0px 1px 15px 65px;
-  max-width: 186px;
+  max-width: 196px;
 }
 .icon {
   padding: 20px 1px 20px 10px;
@@ -64,7 +64,7 @@ h1 {
   max-width: 80px;
 }
 .city {
-  padding: 10px 1px 10px 230px;
+  padding: 10px 1px 10px 210px;
   margin-top: 5px;
 }
 #current {
