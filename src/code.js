@@ -12,6 +12,12 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function formatDate(date) {
@@ -129,3 +135,9 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+//function background(){
+//if(morning) background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
+//else if(day) background: linear-gradient(90deg, rgb(252, 209, 115) 0%, rgb(241, 154, 102) 100%);
+//else if(evening) background: linear-gradient(90deg, rgb(195, 12, 12) 0%, rgb(102, 102, 241) 100%);else (night)
+//background: linear-gradient(90deg, rgb(56, 7, 7) 0%, rgb(39, 18, 139) 100%);}

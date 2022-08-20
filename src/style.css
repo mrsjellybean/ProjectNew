@@ -5,6 +5,9 @@ img {
   max-width: 90%;
   margin: 45px 30px 0 50px;
 }
+.header {
+  background-color: #fff;
+}
 .style {
   margin-right: 15px;
   font-size: 44px;
@@ -19,6 +22,10 @@ img {
 }
 h1 {
   display: inline;
+}
+#icon {
+  margin: 0 auto;
+  padding-left: 25px;
 }
 #button {
   border: none;
@@ -59,7 +66,7 @@ h1 {
   max-width: 196px;
 }
 .icon {
-  padding: 20px 1px 20px 10px;
+  padding: 1px 1px 20px 10px;
   margin-top: 5px;
   max-width: 80px;
 }
@@ -114,7 +121,7 @@ ul {
 .box {
   margin: 100px auto;
   width: 800px;
-  height: 409px;
+  height: 432px;
 }
 
 .icons {
