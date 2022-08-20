@@ -48,7 +48,7 @@ h1 {
 
 .search-engine {
   padding-top: 22px;
-  padding-left: 240px;
+  padding-left: 230px;
   padding-right: 1px;
 }
 .date-time {
@@ -59,7 +59,7 @@ h1 {
 .description {
   padding: 0px 1px 15px 120px;
 
-  width: 100px;
+  width: 110px;
 }
 .temperature {
   padding: 0px 1px 15px 65px;
@@ -121,7 +121,7 @@ ul {
 .box {
   margin: 100px auto;
   width: 800px;
-  height: 432px;
+  height: 451px;
 }
 
 .icons {
@@ -157,4 +157,13 @@ form {
 #temperature {
   position: relative;
   line-height: 1.5;
+}
+#speed,
+#humidity,
+#description,
+#date {
+  color: #6c63ff;
+}
+#date {
+  text-transform: uppercase;
 }
