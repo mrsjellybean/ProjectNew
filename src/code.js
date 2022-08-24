@@ -51,6 +51,13 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
 function search(city) {
   document.querySelector("#city").innerHTML = city;
   let apiKey = "06f730764c0a59622baaa70613467bb1";
@@ -144,24 +151,38 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecastan");
   let forecastHTML = `<div class="row forecast border">`;
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `
         <div class="col first-day">
-       <div class="days">${day}</div>
+       <div class="days">${formatDay(forecastDay.dt)}</div>
    
-    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" class="frc">
-       <p>22°C<span class="grey-degree"> 23°C</span></p>
+    <img src="http://openweathermap.org/img/wn/${
+      forecastDay.weather[0].icon
+    }@2x.png" alt="" class="frc">
+       <p>${Math.round(
+         forecastDay.temp.max
+       )}°C<span class="grey-degree"> ${Math.round(
+          forecastDay.temp.min
+        )}°C</span></p>
                 
               </div>`;
+    }
   });
 
-  forecastHTML = forecastHTML + `</div>`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-4 image">
+          <img src="src/undraw_weather_re_qsmd.svg" alt="weather-girl" />
+        </div>
+      </div>
+      </div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
