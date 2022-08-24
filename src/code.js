@@ -136,6 +136,11 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+//function changeColor(){
+//let color = document.getElementById("hed");
+//  if()
+//  ;
+//    color.style.backgroundColor = "blue";}
 //function background(){
 //if(morning) background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
 //else if(day) background: linear-gradient(90deg, rgb(252, 209, 115) 0%, rgb(241, 154, 102) 100%);

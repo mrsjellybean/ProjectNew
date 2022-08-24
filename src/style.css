@@ -140,6 +140,8 @@ form {
 }
 .days {
   text-align: center;
+  margin: 0;
+  padding-top: 15px;
 }
 .search {
   margin: 0 auto;
@@ -166,4 +168,7 @@ form {
 }
 #date {
   text-transform: uppercase;
+}
+.frc {
+  margin: 0;
 }
