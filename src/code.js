@@ -136,6 +136,28 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecastan");
+  let forecastHTML = `<div class="row forecast border">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col first-day">
+       <div class="days">${day}</div>
+   
+    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" class="frc">
+       <p>22°C<span class="grey-degree"> 23°C</span></p>
+                
+              </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
+
 //function changeColor(){
 //let color = document.getElementById("hed");
 //  if()
